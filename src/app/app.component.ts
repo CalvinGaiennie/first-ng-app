@@ -6,11 +6,12 @@ import { HomeComponent } from './home/home.component';
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, HomeComponent, HeaderComponent],
-  template: `<app-header /> <app-home />`,
+  template: `<app-header />
+    <main><app-home /></main> `,
   styles: [
     `
-      p {
-        color: red;
+      main {
+        padding: 16px;
       }
     `,
   ],
